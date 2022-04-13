@@ -12,7 +12,7 @@ def train_perceptron():
         network.s_layer.add_neuron(None, lambda value: value)
     print('S-layer generated')
 
-    a_neurons_count = 5 * 100 # 200
+    a_neurons_count = 200 # Сначала можно оставить 200, скаэет мало ---> увеличить (к примеру 500)
     for position in range(a_neurons_count):
         neuron = ANeuron(None, lambda value: int(value >= 0))
         # инициализация весов нейронов А слоя
